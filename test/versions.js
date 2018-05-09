@@ -89,7 +89,7 @@ describe('Versions', function() {
             var result = manager.versions();
             result.should.have.lengthOf(3);
             result[1].should.have.properties('version', 'path');
-            result[1].tag.should.equal('beta');
+            result[1].tag.should.equal('pre');
             result[1].name.should.equal('latest');
             result[1].link.should.equal(localGitbook);
         });
